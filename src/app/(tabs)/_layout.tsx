@@ -76,6 +76,54 @@ export default function TabsLayout(){
           tabBarLabel: () => null,
         }}
       />
+      <Tabs.Screen
+        name="Screens/HeartStudy/index"
+        options={{
+          href: null
+        }}
+      />
+      <Tabs.Screen
+        name="Screens/VasosStudy/index"
+        options={{
+          href: null
+        }}
+      />
+      <Tabs.Screen
+        name="Screens/LungStudy/index"
+        options={{
+          href: null
+        }}
+      />
+      <Tabs.Screen
+        name="Screens/FluxoStudy/index"
+        options={{
+          href: null
+        }}
+      />
+      <Tabs.Screen
+        name="Screens/ArteriesStudy/index"
+        options={{
+          href: null
+        }}
+      />
+      <Tabs.Screen
+        name="Screens/VeinsStudy/index"
+        options={{
+          href: null
+        }}
+      />
+      <Tabs.Screen
+        name="Screens/CapillariesStudy/index"
+        options={{
+          href: null
+        }}
+      />
+      <Tabs.Screen
+        name="Screens/VasosExercise/index"
+        options={{
+          href: null
+        }}
+      />
     </Tabs>
   )
 }
