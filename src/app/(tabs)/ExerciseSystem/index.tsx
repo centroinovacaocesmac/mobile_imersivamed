@@ -17,7 +17,7 @@ export default function ExerciseSystem(){
     return(
         <SafeAreaView className="flex-1 bg-white">
             <StatusBar barStyle={"dark-content"}/>
-            <ScrollView style={{ marginTop: statusBarHeight + 8 }} showsVerticalScrollIndicator={false} className="flex-1 px-4">
+            <ScrollView style={{ marginTop: statusBarHeight + 8 }} showsVerticalScrollIndicator={false} className="flex-1 bg-white px-4">
                 <View className="flex gap-10 pb-4">
                     <View className="flex flex-row h-8">
                         <Button icon="angle-left" iconColor="#282828" iconSize={24} nameClass="flex flex-row" onPress={() => router.back()}/>
@@ -25,21 +25,21 @@ export default function ExerciseSystem(){
                     </View>
                     <View className="gap-4">
                         <Title nameClassOne="flex flex-row" nameClassTextOne="color-blackColor1 text-2xl font-medium" textOne="Circulação sanguínea"/>
-                        <CardTwo title="Coração" desc="Exercício que consta 5 questões de múltipla escolha, cada uma com 4 alternativas." imageSource={HeartIcon}/>
+                        <CardTwo title="Coração" desc="Exercício que consta 5 questões de múltipla escolha, cada uma com 4 alternativas." imageSource={HeartIcon} onPress={() => router.push("/(notabstwo)/Screens/ExerciseScreen?topic=Coração")}/>
                     </View>
                     <View className="gap-4">
                         <Title nameClassOne="flex flex-row" nameClassTextOne="color-blackColor1 text-2xl font-medium" textOne="Vasos sanguíneos"/>
-                        <CardTwo title="Artérias" desc="Exercício que consta 5 questões de múltipla escolha, cada uma com 4 alternativas." imageSource={MedicineIcon}/>
-                        <CardTwo title="Veias" desc="Exercício que consta 5 questões de múltipla escolha, cada uma com 4 alternativas." imageSource={TreeIcon}/>
-                        <CardTwo title="Capilares" desc="Exercício que consta 5 questões de múltipla escolha, cada uma com 4 alternativas." imageSource={MicroscopeIcon}/>
+                        <CardTwo title="Artérias" desc="Exercício que consta 5 questões de múltipla escolha, cada uma com 4 alternativas." imageSource={MedicineIcon} onPress={() => router.push("/(notabstwo)/Screens/ExerciseScreen?topic=Artérias")}/>
+                        <CardTwo title="Veias" desc="Exercício que consta 5 questões de múltipla escolha, cada uma com 4 alternativas." imageSource={TreeIcon} onPress={() => router.push("/(notabstwo)/Screens/ExerciseScreen?topic=Veias")}/>
+                        <CardTwo title="Capilares" desc="Exercício que consta 5 questões de múltipla escolha, cada uma com 4 alternativas." imageSource={MicroscopeIcon} onPress={() => router.push("/(notabstwo)/Screens/ExerciseScreen?topic=Capilares")}/>
                     </View>
                     <View className="gap-4">
                         <Title nameClassOne="flex flex-row" nameClassTextOne="color-blackColor1 text-2xl font-medium" textOne="Circulação pulmonar"/>
-                        <CardTwo title="Pulmão" desc="Exercício que consta 5 questões de múltipla escolha, cada uma com 4 alternativas." imageSource={YogaIcon}/>
+                        <CardTwo title="Pulmão" desc="Exercício que consta 5 questões de múltipla escolha, cada uma com 4 alternativas." imageSource={YogaIcon} onPress={() => router.push("/(notabstwo)/Screens/ExerciseScreen?topic=Circulação pulmonar")}/>
                     </View>
                     <View className="gap-4">
                         <Title nameClassOne="flex flex-row" nameClassTextOne="color-blackColor1 text-2xl font-medium" textOne="Circulação sistêmica"/>
-                        <CardTwo title="Fluxo" desc="Exercício que consta 5 questões de múltipla escolha, cada uma com 4 alternativas." imageSource={StethoscopeIcon}/>
+                        <CardTwo title="Fluxo" desc="Exercício que consta 5 questões de múltipla escolha, cada uma com 4 alternativas." imageSource={StethoscopeIcon} onPress={() => router.push("/(notabstwo)/Screens/ExerciseScreen?topic=Circulação sistêmica")}/>
                     </View>
                 </View>
             </ScrollView>

@@ -11,7 +11,7 @@ export default function ContentsSystem(){
     return(
         <SafeAreaView className="flex-1 bg-white">
             <StatusBar barStyle={"dark-content"}/>
-            <ScrollView style={{ marginTop: statusBarHeight + 8 }} showsVerticalScrollIndicator={false} className="flex-1 px-4">
+            <ScrollView style={{ marginTop: statusBarHeight + 8 }} showsVerticalScrollIndicator={false} className="flex-1 bg-white px-4">
                 <View className="flex gap-10 pb-4">
                     <View className="flex flex-row h-8">
                         <Button icon="angle-left" iconColor="#282828" iconSize={24} nameClass="flex flex-row" onPress={() => router.back()}/>
@@ -19,21 +19,21 @@ export default function ContentsSystem(){
                     </View>
                     <View className="gap-4">
                         <Title nameClassOne="flex flex-row" nameClassTextOne="color-blackColor1 text-2xl font-medium" textOne="Circulação sanguínea"/>
-                        <CardTwo title="Coração" desc="Explore o coração em realidade aumentada (RA) e aprenda sobre suas funções e estruturas."/>
+                        <CardTwo title="Coração" desc="Explore o coração em realidade aumentada (RA) e aprenda sobre suas funções e estruturas." onPress={() => router.push("/(tabs)/Screens/HeartStudy")}/>
                     </View>
                     <View className="gap-4">
                         <Title nameClassOne="flex flex-row" nameClassTextOne="color-blackColor1 text-2xl font-medium" textOne="Vasos sanguíneos"/>
-                        <CardTwo title="Artérias" desc="Explore a artéria em realidade aumentada (RA) e aprenda sobre suas funções e estruturas."/>
-                        <CardTwo title="Veias" desc="Explore a veia em realidade aumentada (RA) e aprenda sobre suas funções e estruturas."/>                 
-                        <CardTwo title="Capilares" desc="Explore os capilares em realidade aumentada (RA) e aprenda sobre suas funções e estruturas."/>
+                        <CardTwo title="Artérias" desc="Explore a artéria em realidade aumentada (RA) e aprenda sobre suas funções e estruturas." onPress={() => router.push("/(tabs)/Screens/ArteriesStudy")}/>
+                        <CardTwo title="Veias" desc="Explore a veia em realidade aumentada (RA) e aprenda sobre suas funções e estruturas." onPress={() => router.push("/(tabs)/Screens/VeinsStudy")}/>                 
+                        <CardTwo title="Capilares" desc="Explore os capilares em realidade aumentada (RA) e aprenda sobre suas funções e estruturas." onPress={() => router.push("/(tabs)/Screens/CapillariesStudy")}/>
                     </View>
                     <View className="gap-4">
                         <Title nameClassOne="flex flex-row" nameClassTextOne="color-blackColor1 text-2xl font-medium" textOne="Circulação pulmonar"/>
-                        <CardTwo title="Pulmão" desc="Explore o pulmão em realidade aumentada (RA) e aprenda sobre suas funções e estruturas."/>
+                        <CardTwo title="Pulmão" desc="Explore o pulmão em realidade aumentada (RA) e aprenda sobre suas funções e estruturas." onPress={() => router.push("/(tabs)/Screens/LungStudy")}/>
                     </View>
                     <View className="gap-4">
                         <Title nameClassOne="flex flex-row" nameClassTextOne="color-blackColor1 text-2xl font-medium" textOne="Circulação sistêmica"/>
-                        <CardTwo title="Fluxo" desc="Explore o fluxo em realidade aumentada (RA) e aprenda sobre suas funções e estruturas."/>
+                        <CardTwo title="Fluxo" desc="Explore o fluxo em realidade aumentada (RA) e aprenda sobre suas funções e estruturas." onPress={() => router.push("/(tabs)/Screens/FluxoStudy")}/>
                     </View>
                 </View>
             </ScrollView>
