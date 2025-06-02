@@ -7,6 +7,7 @@ import Button from "@components/Button";
 import Title from "@components/Title";
 import Accordion from "@components/Accordion";
 import SystemicImage from "@assets/Images/systemic_image.png";
+import LoadingText from "@components/LoadingText";
 
 export default function CapillariesStudy(){
     const statusBarHeight = Constants.statusBarHeight;
@@ -41,9 +42,7 @@ export default function CapillariesStudy(){
                                 <Accordion key={index} title={item.title} desc={item.description}/>
                             ))
                         ) : (
-                            <Text className="text-grayColor3 text-center text-base">
-                                Carregando conteúdo.
-                            </Text>
+                            <LoadingText/>
                         )}
                     </View>
                     <View>

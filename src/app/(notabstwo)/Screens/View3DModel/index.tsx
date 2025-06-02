@@ -5,6 +5,7 @@ import { Modelo, useModeloService } from "@services/model.services";
 import Constants  from "expo-constants";
 import Model3D from "@components/Model3D";
 import Button from "@components/Button";
+import LoadingText from "@components/LoadingText";
 
 export default function View3DModel(){
     const statusBarHeight = Constants.statusBarHeight;
@@ -20,7 +21,7 @@ export default function View3DModel(){
         configInicial();
     }, [id]);
 
-    if(!modelo) return <Text className="text-center mt-10">Carregando modelo...</Text>
+    if(!modelo) return <LoadingText/>
 
     return(
         <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
