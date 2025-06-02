@@ -56,7 +56,8 @@ export default function Home(){
                 console.error("Erro ao carregar nome do usuário:", error);
             }
         }
-    })
+        loadUserName();
+    }, []);
 
     const normalize = (text: string) => (
         text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim()

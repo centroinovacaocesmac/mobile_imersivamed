@@ -4,6 +4,7 @@ import "@styles/global.css";
 export default function RootLayout(){
   return(
     <Stack screenOptions={{ headerShown: false, statusBarStyle: "dark" }}>
+      <Stack.Screen name="index" options={{ presentation: "transparentModal", animation: "fade" }}/>
       <Stack.Screen name="(tabs)"/>
     </Stack>
   )

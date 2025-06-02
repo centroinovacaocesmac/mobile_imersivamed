@@ -40,7 +40,7 @@ export default function BottomSheet({title, desc, activeIndex, onPress, nameButt
     }
   }
 
-  return (
+  return(
     <View className="bg-white rounded-t-[20px] w-screen h-72 px-4 py-6 gap-6 items-center">
       <Text className="color-blackColor2 text-2xl font-medium text-center">{title}</Text>
       <Text className="color-grayColor2 text-lg text-center">{desc}</Text>
