@@ -8,7 +8,7 @@ export default function ResultFail(){
 
     return(
         <SafeAreaView className="flex-1 bg-mainColor">
-            <StatusBar barStyle={"light-content"}/>
+            <StatusBar barStyle={"light-content"} translucent={true} backgroundColor={"transparent"}/>
             <View className="flex-1 bg-mainColor justify-center items-center">
                 <View className="flex-1 justify-center items-center relative">
                     <Image source={DoctorFail} className="absolute bottom-[-2px]"/>

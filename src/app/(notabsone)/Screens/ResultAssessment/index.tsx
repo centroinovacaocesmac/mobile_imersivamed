@@ -9,7 +9,7 @@ export default function ResultAssessment(){
 
     return(
         <SafeAreaView className="flex-1 bg-mainColor">
-            <StatusBar barStyle={"light-content"}/>
+            <StatusBar barStyle={"light-content"} translucent={true} backgroundColor={"transparent"}/>
             <View className="flex-1 bg-mainColor justify-center items-center">
                 <View className="flex-1 justify-center items-center relative">
                     <Image source={DoctorReport} className="absolute bottom-[-40px]"/>
