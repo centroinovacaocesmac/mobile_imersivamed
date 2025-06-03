@@ -51,7 +51,7 @@ export default function BottomSheet({title, desc, activeIndex, onPress, nameButt
       </View>
       <Button nameClass="bg-mainColor w-full flex flex-row justify-center rounded-[10px] p-4" nameClassText="color-white text-xl" name={nameButton} iconClass="hidden" onPress={handleButtonPress}/>
       <Modal visible={modalVisible} animationType="slide" transparent>
-        <View className="bg-black/50 flex-1 justify-center items-center">
+        <View className="bg-black/30 flex-1 justify-center items-center">
           <View className="bg-white flex gap-2 w-10/12a w-[320px] rounded-2xl shadow-lg p-6">
             <Text className="color-blackColor2 text-xl font-bold mb-4 text-start">A imersão está prestes a começar! Como devemos te chamar?</Text>
             <InputFiel icon="user-large" placeholderName="Digite seu primeiro nome" value={useName} onChangeText={setUsename}/>

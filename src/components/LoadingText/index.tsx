@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 
 export default function LoadingText(){
     const [dots, setDots] = useState("");
@@ -12,8 +12,10 @@ export default function LoadingText(){
     }, []);
 
     return(
-        <Text className="text-grayColor3 text-center text-base">
-            Carregando conteúdo{dots}
-        </Text>
+        <View className="flex-1 bg-white justify-center items-center">
+            <Text className="text-grayColor3 text-center text-base">
+                Carregando conteúdo{dots}
+            </Text>
+        </View>
     )
 }

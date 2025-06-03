@@ -8,6 +8,7 @@ import Title from "@components/Title";
 import Accordion from "@components/Accordion";
 import HeartImage from "@assets/Images/heart_image.png";
 import LoadingText from "@components/LoadingText";
+import InfoTooltip from "@components/InfoTooltip";
 
 export default function CapillariesStudy(){
     const statusBarHeight = Constants.statusBarHeight;
@@ -34,7 +35,10 @@ export default function CapillariesStudy(){
                         <TouchableOpacity className="border-[0.4px] border-mainColorVariant2 rounded-[10px] h-52 flex justify-center items-center" onPress={() => router.push({pathname: "/(notabstwo)/Screens/View3DModel", params: {id: "coracao"}})}>
                             <Image source={HeartImage} className="w-40 h-40"/>
                         </TouchableOpacity>
-                        <Text className="color-grayColor2 text-base font-medium">Veja o modelo 3D tocando na imagem</Text>
+                        <View className="flex flex-row justify-between">
+                            <Text className="color-grayColor2 text-base font-medium">Veja o modelo 3D tocando na imagem</Text>
+                            <InfoTooltip title="Olá! Antes de visualizar o modelo 3D, aqui vão duas dicas importantes:" messageOne="1: O carregamento do modelo pode levar alguns segundos. Não se preocupe, é normal." messageTwo="2: Atualmente, é possível visualizar o modelo até duas vezes. Para acessá-lo novamente após isso, será necessário fechar e reabrir o aplicativo."/>
+                        </View>
                     </View>
                     <View className="gap-4">
                         {contents.length > 0 ? (
