@@ -69,7 +69,7 @@ export default function Home(){
 
     return(
         <SafeAreaView className="flex-1 bg-white">
-            <StatusBar barStyle={"dark-content"}/>
+            <StatusBar barStyle={"dark-content"} translucent={true} backgroundColor={"transparent"}/>
             <ScrollView style={{ marginTop: statusBarHeight + 8 }} showsVerticalScrollIndicator={false} className="flex-1 bg-white px-4">
                 <View className="flex gap-10 pb-4">
                     <View className="flex-1">

@@ -25,7 +25,7 @@ export default function View3DModel(){
 
     return(
         <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
-            <StatusBar barStyle={"dark-content"} backgroundColor={"white"}/>
+            <StatusBar barStyle={"dark-content"} translucent={true} backgroundColor={"transparent"}/>
             <View style={{marginTop: statusBarHeight + 8}} className="bg-white px-4">
                 <View className="flex flex-col gap-4">
                     <Model3D modelo={modelo}/>
