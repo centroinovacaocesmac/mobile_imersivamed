@@ -16,7 +16,8 @@
         "foregroundImage": "./src/assets/Icons/imersivaMed-icon-adaptive.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.roboticacesmac.ImersivaMedApp"
     },
     "web": {
       "bundler": "metro",
